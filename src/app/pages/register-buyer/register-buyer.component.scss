@@ -1,0 +1,34 @@
+
+.btn-class{
+    box-shadow: inset 0 0 0 1px #326CF4;
+  }
+  .note {
+    color: grey;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.card.shadow-lg.p-3.mb-5.bg-white.rounded-lg.mt-5 {
+    height: 598px;
+}
+.card.shadow-lg.p-3.mb-5.bg-white.rounded-lg.mt-1 {
+    height: 235px;
+}
+.card.shadow-lg.p-3.mb-1.bg-white.rounded-lg.mt-5 {
+    height: 360px;
+}
+.jumbotron.font-weight-bold {
+    background-color: #F3FAFF;
+}
+@media only screen and (min-width: 769px) and (max-width: 809px) {
+    .card.shadow-lg.p-3.mb-5.bg-white.rounded-lg.mt-5 {
+        height: 665px;
+    }
+    .card.shadow-lg.p-3.mb-5.bg-white.rounded-lg.mt-1 {
+        height: 235px;
+    }
+    .card.shadow-lg.p-3.mb-1.bg-white.rounded-lg.mt-5 {
+        height: 428px;
+    }
+}

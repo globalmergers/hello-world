@@ -1,0 +1,213 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white z-index  desktopview" id="header">
+    <div class="container-fluid">
+      <a class="navbar-brand anchor logo-box" routerLink="/">
+        <img src="assets/images/logo.webp" class="logo"
+                    width="100%" height="100%">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+        (click)="isCollapsed = !isCollapsed">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class=" navbar-collapse" id="navbarSupportedContent" [collapse]="isCollapsed">
+        <ul class="navbar-nav mb-2 ml-auto mr-auto mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold anchor scr themeBlack" aria-current="page"
+              routerLink="/find-buyer">Find a Buyer</a>
+          </li>
+          <li class="nav-item ml-middle">
+            <a class="nav-link font-weight-bold anchor scr  themeBlack" routerLink="/find-seller">Find a
+              Seller</a>
+          </li>
+          <li class="nav-item ml-middle">
+            <a class="nav-link font-weight-bold anchor  scr themeBlack" routerLink="/about-us">About
+              Us</a>
+          </li>
+          <li class="nav-item dropdown ml-middle">
+            <a class="nav-link dropdown-toggle font-weight-bold anchor scr themeBlack" id="navbarDropdownMenuLink"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Industry <i class="fa fa-angle-down desktop-angle"></i>
+            </a>
+            <ul class="dropdown-menu tm" aria-labelledby="navbarDropdownMenuLink">
+              <li class="industry">
+                <a class="dropdown-item themeBlack" routerLink="/industry-Automotive"><strong>Automotive</strong></a>
+              </li>
+              <li class="industry">
+                <a class="dropdown-item themeBlack" routerLink="industry-Electric-Vehicle"><strong>Electric Vehicle</strong></a>
+              </li>
+              <div class="add-padding-15">
+                <hr class="m-bottom">
+              </div>
+              <li class="industry"> 
+                <a class="dropdown-item themeBlack" routerLink="industry-Energy"><strong>Energy</strong></a>
+              </li>
+              <li class="industry">
+                <a class="dropdown-item themeBlack" routerLink="industry-Industrial-Goods"><strong>Industrial
+                    Goods</strong></a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ml-middle">
+            <a class="nav-link dropdown-toggle font-weight-bold anchor scr themeBlack" id="navbarDropdownMenuLink"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Country <i class="fa fa-angle-down desktop-angle"></i>
+            </a>
+            <ul class="dropdown-menu tm" aria-labelledby="navbarDropdownMenuLink">
+              <li>
+                <a class="dropdown-item themeBlack" routerLink="/country-austria"><strong>Austria</strong></a>
+              </li>
+             
+              <li>
+                <a class="dropdown-item themeBlack" routerLink="/country/belgium"><strong>Belgium</strong></a>
+              </li>
+              <li>
+                <a class="dropdown-item themeBlack" routerLink="/country/croatia"><strong>Croatia</strong></a>
+              </li>
+              <div class="add-padding-15">
+                <hr class="m-bottom">
+              </div>
+              <li>
+                <a class="dropdown-item themeBlack" routerLink="/country/czech-republic"><strong>Czech Republic</strong></a>
+              </li>
+              <li>
+                <a class="dropdown-item themeBlack" routerLink="/country/denmark"><strong>Denmark</strong></a>
+              </li>
+              <li>
+                <a class="dropdown-item themeBlack" routerLink="/country/finland"><strong>Finland</strong></a>
+              </li>
+              <div class="add-padding-15">
+                <hr class="m-bottom">
+              </div>
+              <li>
+                <a class="dropdown-item themeBlack" routerLink="/country/france"><strong>France</strong></a>
+              </li>
+              <li>
+                <a class="dropdown-item themeBlack" routerLink="/country/germany"><strong>Germany</strong></a>
+              </li>
+              <li>
+                <a class="dropdown-item themeBlack" routerLink="/country/hungary"><strong>Hungary</strong></a>
+              </li>
+              <div class="add-padding-15">
+                <hr class="m-bottom">
+              </div>
+              <li>
+                <a class="dropdown-item themeBlack" routerLink="/country/italy"><strong>Italy</strong></a>
+              </li>
+              <li>
+                <a class="dropdown-item themeBlack" routerLink="/country/netherlands"><strong>Netherlands</strong></a>
+              </li>
+              <li>
+                <a class="dropdown-item themeBlack" routerLink="/country/poland"><strong>Poland</strong></a>
+              </li>
+              <div class="add-padding-15">
+                <hr class="m-bottom">
+              </div>
+              <li>
+                <a class="dropdown-item themeBlack" routerLink="/country/portugal"><strong>Portugal</strong></a>
+              </li>
+              <li>
+                <a class="dropdown-item themeBlack" routerLink="/country/romania"><strong>Romania</strong></a>
+              </li>
+              <li>
+                <a class="dropdown-item themeBlack" routerLink="/country/slovakia"><strong>Slovakia</strong></a>
+              </li>
+              <div class="add-padding-15">
+                <hr class="m-bottom">
+              </div>
+              <li>
+                <a class="dropdown-item themeBlack" routerLink="/country/slovenia"><strong>Slovenia</strong></a>
+              </li>
+              <li>
+                <a class="dropdown-item themeBlack" routerLink="/country/spain"><strong>Spain</strong></a>
+              </li>
+             
+              <li>
+                <a class="dropdown-item themeBlack" routerLink="/country/sweden"><strong>Sweden</strong></a>
+              </li>
+              <div class="add-padding-15">
+                <hr class="m-bottom">
+              </div>
+              <li>
+                <a class="dropdown-item themeBlack" routerLink="/country/switzerland"><strong>Switzerland</strong></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <li class="nav-item third">
+            <button type="button" class="btn btn-class btn-hover btn-lg anchor efect-on-btn" routerLink="/sign-in">
+              Sign In
+            </button>
+            <button type="button"
+              class="btn btn-class btn-primary text-white btn-lg anchor getting-started-button btn-hover"
+              routerLink="/request-information">
+              Get Started <i class="fas fa-long-arrow-alt-right"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </nav>
+  <div class="nob">
+    <div id="myNav" class="overlay mob-opacity">
+      <div class="clearfix fixed-head">
+        <a class="navbar-brand anchor logo-box float-start" routerLink="/">
+            <img src="assets/images/logo.webp" class="logo"
+            width="100%" height="100%">
+        </a>
+        <a href="javascript:void(0)" class="closebtn float-end" (click)="closeNav()"><img src="assets/images/cut.webp"
+            width="35" height="30" /></a>
+      </div>
+
+      <div class="overlay-content">
+        <ul class="mainmenu">
+          <li><a routerLink="/find-buyer" (click)="closeNav()">Find a Buyer</a></li>
+          <li><a routerLink="/find-seller" (click)="closeNav()">Find a Seller</a></li>
+          <li><a routerLink="/about-us" (click)="closeNav()">About Us</a></li>
+          <li><a class="dropdown-toggle vlob"
+              (click)="isCollapsed2==true ? isCollapsed2 = false : isCollapsed2 = true">Industry <i
+                class="float-right mt-2 fa"
+                [ngClass]="{'fa-angle-down':isCollapsed2==true, 'fa-angle-up': isCollapsed2==false}"
+                aria-hidden="true"></i></a>
+            <div [collapse]="isCollapsed2" [isAnimated]="true">
+              <ul class="submenu">
+                <li *ngFor="let choice of items">
+                  <a routerLink="{{ choice.link }}" (click)="closeNav()">{{choice.name}}</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li><a class="dropdown-toggle vlob"
+              (click)="isCollapsed3==true ? isCollapsed3 = false : isCollapsed3 = true">Country <i
+                class="float-right  mt-2 fa"
+                [ngClass]="{'fa-angle-down':isCollapsed3==true, 'fa-angle-up': isCollapsed3==false}"
+                aria-hidden="true"></i></a>
+            <div [collapse]="isCollapsed3" [isAnimated]="true">
+              <ul class="submenu">
+                <li *ngFor="let choice of items2">
+                  <a routerLink="{{ choice.link }}" (click)="closeNav()">{{choice.name}}</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <button type="button" class="btn stared" routerLink="/request-information" (click)="closeNav()">
+          Get Started <span class="righticon"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile" class="mobile mobileview shadow-sm">
+      <div class="clearfix clearfix-mob">
+        <a class="navbar-brand anchor logo-box float-start" routerLink="/">
+            <img src="assets/images/logo.webp" class="logo"
+            width="100%" height="100%">
+        </a>
+        <span style="font-size:30px;cursor:pointer; float:right; padding-top: 10px;" class="mobileview "
+          (click)="openNav()">&#9776;</span>
+      </div>
+    </div>
+  </div>
+</header>
